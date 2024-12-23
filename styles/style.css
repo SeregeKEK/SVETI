@@ -1,0 +1,302 @@
+/* montserrat-200 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../styles/fonts/montserrat-v29-cyrillic_latin-200.woff2") format("woff2");
+}
+/* montserrat-regular - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../styles/fonts/montserrat-v29-cyrillic_latin-regular.woff2") format("woff2");
+}
+/* montserrat-600 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../styles/fonts/montserrat-v29-cyrillic_latin-600.woff2") format("woff2");
+}
+/* gimetta-marriage-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "gimetta-marriage";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../styles/fonts/gimetta-marriage.otf") format("opentype");
+}
+/* bodega-script-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "bodega-script";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../styles/fonts/BodegaScript.woff2") format("woff2");
+}
+* {
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.2vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+.center-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-wrapper {
+  height: 100vh;
+  color: #fff;
+  background-image: url(./img/promo/promo-img1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding: 40px 3%;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3vw 3vw 0;
+}
+.page-header--main {
+  padding: 0;
+}
+.page-header--main > .page-header__logo {
+  display: none;
+}
+.page-header__logo-img {
+  height: 7vh;
+}
+.page-header__list {
+  display: flex;
+  justify-content: end;
+  gap: 40px;
+  width: 100%;
+  text-transform: uppercase;
+}
+.page-header__link {
+  color: #000;
+}
+.page-header__link--main {
+  color: #fff;
+}
+
+.main-nav {
+  align-self: flex-start;
+  position: sticky;
+  width: 100%;
+  padding-top: 3vw;
+  padding-left: 1.5vw;
+  top: 0;
+  font-weight: 200;
+}
+.main-nav--promo {
+  position: relative;
+  padding-top: 17vw;
+  padding-left: 0;
+}
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.main-nav__item {
+  position: relative;
+  display: flex;
+}
+.main-nav__item:first-child {
+  text-transform: uppercase;
+}
+.main-nav__img {
+  display: none;
+  position: absolute;
+  top: 2%;
+  left: -1.5vw;
+  width: 1vw;
+  height: 2vh;
+}
+@media (min-width: 1800px) {
+  .main-nav__img {
+    top: 12%;
+  }
+}
+.main-nav__link {
+  color: #000;
+}
+.main-nav__link--promo {
+  color: #fff;
+}
+.main-nav__link:hover {
+  text-decoration: underline;
+}
+.main-nav__link:hover ~ .main-nav__img {
+  display: block;
+}
+.main-nav__link--bold {
+  font-weight: 600;
+}
+
+.promo {
+  position: relative;
+  padding: 0 7%;
+  height: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.promo__logo {
+  position: absolute;
+  top: -21vh;
+  left: 40vw;
+  width: 15vw;
+  height: 100vh;
+  transform: rotate(22.5deg);
+}
+.promo__title {
+  position: absolute;
+  display: inline-block;
+  top: 43vh;
+  left: 35vw;
+  width: 15vw;
+  height: 100vh;
+  font-size: 10vw;
+  font-family: "gimetta-marriage";
+  text-transform: uppercase;
+  letter-spacing: 7px;
+}
+.promo__text {
+  position: absolute;
+  display: inline-block;
+  top: 58vh;
+  left: 25vw;
+  width: 47vw;
+  height: 100vh;
+  font-size: 5vw;
+  font-family: "bodega-script";
+}
+
+.page-main {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 3vw 3vw;
+}
+
+.products {
+  display: flex;
+  gap: 7vw;
+}
+.products__main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 3vw;
+  padding-top: 4vw;
+  overflow: hidden;
+}
+.products__catalog {
+  padding-top: 3vw;
+}
+.products__product-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 3vw;
+  padding-top: 4vw;
+  overflow: hidden;
+}
+
+.product-card {
+  margin-bottom: 30px;
+  color: #000;
+}
+.product-card__img {
+  margin-bottom: 10px;
+}
+.product-card__text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.product-card__title {
+  font-weight: 600;
+  font-size: 1vw;
+}
+.product-card__price {
+  font-size: 1vw;
+}
+
+.breadcrumbs__list {
+  display: flex;
+}
+.breadcrumbs__item:first-child > .breadcrumbs__link {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.breadcrumbs__item:not(:last-child) {
+  margin-right: 0.5vw;
+}
+.breadcrumbs__item:not(:last-child)::after {
+  content: "/";
+}
+.breadcrumbs__link {
+  color: #000;
+  text-decoration: none;
+}
+
+.page-footer {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 3vw 3vw;
+}
+.page-footer__logo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.page-footer__logo-item {
+  text-transform: uppercase;
+  font-family: "aston-calvin";
+  font-size: 5vw;
+  letter-spacing: 7px;
+}
+.page-footer__text {
+  text-transform: uppercase;
+}
+.page-footer__nav {
+  position: absolute;
+  top: 15%;
+  right: 3vw;
+}
+.page-footer__nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+.page-footer__nav-link {
+  color: #000;
+}/*# sourceMappingURL=style.css.map */
