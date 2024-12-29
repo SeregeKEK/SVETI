@@ -3,6 +3,9 @@ fetch("js/data.json")
         return response.json();
     })
     .then((data) => {
+        const typeToFilter = 'chokers';
+        data = data.filter(product => product.type === typeToFilter);
+
         const cardsContainer = document.querySelector('.products__product-cards');
         data.forEach(({ productId, imgSrc, productName, productPrice }) => {
             const productCardEl = `
