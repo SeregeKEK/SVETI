@@ -23,7 +23,9 @@
         position: absolute;
         top: 1vh;
         right: 3vw;
-        
+        @media (max-width: 1000px) {
+            display: none;
+        }
     }
 
     &__nav-list {

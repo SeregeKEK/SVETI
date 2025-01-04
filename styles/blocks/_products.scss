@@ -1,6 +1,8 @@
 .products {
+    position: relative;
     display: flex;
     gap: 7vw;
+    overflow: hidden;
 
     &__main {
         display: grid;
@@ -24,5 +26,9 @@
         gap: 3vw;
         padding-top: 4vw;
         overflow: hidden;
+
+        @media (max-width: 1000px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 }
