@@ -50,6 +50,10 @@ body {
   font-size: 1.2vw;
 }
 
+.body--scroll-off {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -169,6 +173,9 @@ img {
   padding-left: 1.5vw;
   top: 0;
   font-weight: 200;
+}
+.main-nav--hidden {
+  display: none;
 }
 .main-nav--promo {
   position: relative;
