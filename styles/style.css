@@ -174,8 +174,10 @@ img {
   top: 0;
   font-weight: 200;
 }
-.main-nav--hidden {
-  display: none;
+@media (max-width: 1000px) {
+  .main-nav--hidden {
+    display: none;
+  }
 }
 .main-nav--promo {
   position: relative;
