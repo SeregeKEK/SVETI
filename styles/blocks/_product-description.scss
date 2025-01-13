@@ -21,6 +21,7 @@
         width: 80vw;
         overflow: scroll;
         background-color: #fff;
+        z-index: 6;
 
         @media (max-width: 1000px) {
             grid-template-columns: 1fr;
