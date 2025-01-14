@@ -4,7 +4,6 @@ export function productPopupClose() {
     const bodyEl = document.querySelector("body");
     closeBtn.addEventListener("click", (e) => {
         bodyEl.classList.remove("body--scroll-off");
-
         productDescriptionEl.remove();
     });
 
