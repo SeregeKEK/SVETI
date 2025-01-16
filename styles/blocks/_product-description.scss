@@ -51,14 +51,16 @@
         gap: 1vw;
 
         @media (max-width: 1000px) {
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
-            grid-area: auto;
+            display: none;
+        //     grid-template-columns: 1fr;
+        //     grid-template-rows: auto;
+        //     grid-area: auto;
         }
     }
 
     &__img-wrap {
         position: relative;
+        max-height: 30vw;
 
         &::before {
             content: ' ';
