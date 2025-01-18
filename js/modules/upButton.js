@@ -4,7 +4,6 @@ export function upButton() {
         const backToTop = document.querySelector(".up-button");
         const backToTopHidden = "up-button--hidden";
 
-        // Показать/скрыть кнопку при прокрутке страницы
         window.addEventListener("scroll", function () {
             if (window.scrollY >= 300) {
                 backToTop.classList.remove(backToTopHidden);

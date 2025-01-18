@@ -52,9 +52,9 @@
 
         @media (max-width: 1000px) {
             display: none;
-        //     grid-template-columns: 1fr;
-        //     grid-template-rows: auto;
-        //     grid-area: auto;
+            // grid-template-columns: 1fr;
+            // grid-template-rows: auto;
+            // grid-area: auto;
         }
     }
 
@@ -70,7 +70,7 @@
             top: 1vw;
             right: 1vw;
             display: inline-block;
-            background-image: url(/styles/img/zoom.svg);
+            background-image: url('./img/zoom.svg');
             background-size: cover;
             opacity: 0;
             cursor: pointer;

@@ -777,7 +777,7 @@ img {
   top: 1vw;
   right: 1vw;
   display: inline-block;
-  background-image: url(/styles/img/zoom.svg);
+  background-image: url("./img/zoom.svg");
   background-size: cover;
   opacity: 0;
   cursor: pointer;
@@ -930,7 +930,7 @@ img {
   height: 3vw;
   padding: 1vw 0;
   background-color: rgba(255, 255, 255, 0.4);
-  background-image: url(/styles/img/arrow-up.svg);
+  background-image: url("./img/arrow-up.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 80%;
@@ -947,8 +947,8 @@ img {
 }
 
 .slider {
-  position: relative;
   display: none;
+  position: relative;
 }
 @media (max-width: 1000px) {
   .slider {
@@ -961,11 +961,11 @@ img {
   height: 12vw;
   top: calc(50% - 6vw);
   border: none;
-  background-color: rgba(255, 255, 255, 0.5);
-  background-image: url(/styles/img/slider-arrow.svg);
+  background-image: url("./img/slider-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  background-color: rgba(255, 255, 255, 0.5);
   cursor: pointer;
 }
 .slider__prev-button {
